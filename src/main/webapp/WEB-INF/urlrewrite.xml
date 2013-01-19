@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 4.0//EN"
+        "http://www.tuckey.org/res/dtds/urlrewrite4.0.dtd">
+
+<!--
+
+    Configuration file for UrlRewriteFilter
+    http://www.tuckey.org/urlrewrite/
+
+-->
+<urlrewrite>    
+    <rule>
+        <condition type="user-in-role">ROLE_HOST</condition>
+        <from>/login_success</from>
+        <to type="redirect">%{context-path}/host</to>
+    </rule>
+    <rule>
+        <condition type="user-in-role">ROLE_STUDENT</condition>
+        <from>/login_success</from>
+        <to type="redirect">%{context-path}/student</to>
+    </rule>    
+    <rule>
+        <condition type="user-in-role">ROLE_ADMIN</condition>
+        <from>/login_success</from>
+        <to type="redirect">%{context-path}/admin</to>
+    </rule>
+    <rule>
+        <from>/login_success</from>
+        <to type="redirect">index.htm</to>
+    </rule>    
+</urlrewrite>
