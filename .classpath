@@ -40,5 +40,14 @@
 			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/chirayu.patel/.m2/repository/org/hibernate/hibernate-validator/5.0.0.Alpha1/hibernate-validator-5.0.0.Alpha1.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.hibernate"/>
+			<attribute name="maven.artifactId" value="hibernate-validator"/>
+			<attribute name="maven.version" value="5.0.0.Alpha1"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
